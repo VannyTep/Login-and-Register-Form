@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   font-size: 28pt;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   color: #ed5ab3;
 }
 
@@ -39,7 +39,8 @@ form input[type="password"] {
   background: none;
   border-bottom: 1px solid white;
   color: white;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   transition: 0.2s ease-in;
 }
 form input[type="text"]::placeholder,
@@ -77,4 +78,13 @@ form input[type="email"]:focus,
 form input[type="password"]:focus {
   padding: 0 8px 16px 8px;
   font-size: 13pt;
+}
+
+#errors-username,
+#errors-email,
+#errors-password,
+#errors-confirmed-password {
+  margin: 0;
+  margin-top: 5px;
+  color: rgb(220, 10, 10);
 }
