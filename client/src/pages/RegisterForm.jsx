@@ -49,9 +49,7 @@ function RegisterForm() {
             placeholder="Email"
             onChange={handleInput}
           />
-          <span id="errors-email">
-            {errors.username ? errors.username : "E"}
-          </span>
+          <span id="errors-email">{errors.email ? errors.email : "E"}</span>
         </div>
 
         <div className="password-input-container">
