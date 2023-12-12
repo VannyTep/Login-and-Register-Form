@@ -37,7 +37,7 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-username">
-            {errors.username ? errors.username : "U"}
+            {errors.username ? errors.username : ""}
           </span>
         </div>
 
@@ -50,7 +50,7 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-email">
-            {errors.username ? errors.username : "E"}
+            {errors.username ? errors.username : ""}
           </span>
         </div>
 
@@ -63,7 +63,7 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-email">
-            {errors.password ? errors.password : "P"}
+            {errors.password ? errors.password : ""}
           </span>
         </div>
 
@@ -76,7 +76,7 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-confirmed-password">
-            {errors.confirmed_password ? errors.confirmed_password : "C-P"}
+            {errors.confirmed_password ? errors.confirmed_password : ""}
           </span>
         </div>
 

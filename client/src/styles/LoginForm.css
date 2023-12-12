@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@300;400;500;700&family=Kanit&family=Lato:wght@300;400&family=Lobster&family=Merriweather:wght@700&family=Roboto&family=Ubuntu:wght@500&display=swap");
+body {
+    background-color: #0766ad;
+}
+
+.container {
+    margin-top: 5%;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 28pt;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ed5ab3;
+}
+
+form {
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2rem 1.5rem 5rem 1.5rem;
+    margin: 0 auto 0;
+    background-color: #001b79;
+    /* box-shadow: #ed5ab3 2px 2px 45px 10px; */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 325px;
+    padding: 8px;
+    font-size: 12pt;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    transition: 0.2s ease-in;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form input[type="password"]::placeholder {
+    color: rgb(191, 189, 189);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    width: 354px;
+    padding: 10px;
+    font-size: 14pt;
+    background-color: #1640d6;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+}

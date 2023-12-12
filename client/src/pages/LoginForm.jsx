@@ -1,13 +1,11 @@
 import { useState } from "react";
-import "../styles/RegisterForm.css";
-import RegisterValidation from "../js/registerValidation";
+import "../styles/LoginForm.css";
+import LoginValidation from "../js/loginValidation";
 
-function RegisterForm() {
+function LoginForm() {
   const [values, setValues] = useState({
-    username: "",
     email: "",
     password: "",
-    confirmed_password: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -21,25 +19,13 @@ function RegisterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors(RegisterValidation(values));
+    setErrors(LoginValidation(values));
   };
 
   return (
     <div className="container">
       <form action="" onSubmit={handleSubmit}>
-        <h1>Register</h1>
-        <div className="username-input-container">
-          <input
-            type="text"
-            name="username"
-            id="username-input"
-            placeholder="Username"
-            onChange={handleInput}
-          />
-          <span id="errors-username">
-            {errors.username ? errors.username : "U"}
-          </span>
-        </div>
+        <h1>Login</h1>
 
         <div className="email-input-container">
           <input
@@ -50,7 +36,7 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-email">
-            {errors.username ? errors.username : "E"}
+            {errors.username ? errors.username : ""}
           </span>
         </div>
 
@@ -63,12 +49,12 @@ function RegisterForm() {
             onChange={handleInput}
           />
           <span id="errors-email">
-            {errors.password ? errors.password : "P"}
+            {errors.password ? errors.password : ""}
           </span>
         </div>
 
         <p id="having-acc-txt">
-          Already have an account? <a href="">Login Here</a>
+          Don't have an account yet? <a href="">Sign Up Here</a>
         </p>
 
         <input type="submit" value="Login" id="submit-btn" />
@@ -77,4 +63,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm;
+export default LoginForm;
