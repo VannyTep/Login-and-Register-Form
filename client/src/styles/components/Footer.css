@@ -1,0 +1,12 @@
+.footer {
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  display: inline;
+}
