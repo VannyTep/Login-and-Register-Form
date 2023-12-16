@@ -1,0 +1,59 @@
+/* 
+Color Code: 001B79, 1640D6, ED5AB3, FF90C2
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@300;400;500;700&family=Kanit&family=Lato:wght@300;400&family=Lobster&family=Merriweather:wght@700&family=Roboto&family=Ubuntu:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-register-btn-container {
+  background-color: #eef5ff;
+  height: 90vh;
+  padding-top: 10%;
+}
+
+#title {
+  font-size: 28pt;
+  font-family: "Inter", sans-serif;
+  margin: 2rem 0 3rem 0;
+}
+
+.btn-container {
+  width: 350px;
+  border: 1px solid;
+  margin: 4% auto;
+  padding: 2rem;
+  background-color: #001b79;
+  font-family: "Inter", sans-serif;
+  display: block;
+}
+
+#btn-list {
+  padding: 0;
+}
+
+#btn-list li {
+  list-style: none;
+  margin: 3rem 1rem 0 0;
+  text-align: center;
+}
+
+#login-btn-link,
+#register-btn-link {
+  background-color: #ed5ab3;
+  text-decoration: none;
+  font-size: 14pt;
+  border-radius: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+#login-btn-link {
+  padding: 10px 120px;
+}
+#register-btn-link {
+  padding: 10px 108px;
+}
