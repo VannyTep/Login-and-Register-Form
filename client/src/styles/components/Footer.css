@@ -7,6 +7,11 @@
   justify-content: center;
 }
 
-ul li {
+#useful-links-list li {
   display: inline;
+}
+
+#useful-links {
+  color: red;
+  /* padding: 1rem 2rem 1rem 2rem; */
 }

@@ -25,18 +25,20 @@ body {
   width: 350px;
   border: 1px solid;
   margin: 4% auto;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #001b79;
   font-family: "Inter", sans-serif;
+  display: block;
 }
 
-li {
+#btn-list {
+  padding: 0;
+}
+
+#btn-list li {
   list-style: none;
-  background-color: blanchedalmond;
+  margin: 3rem 1rem 0 0;
   text-align: center;
-  padding: 1rem 0 1rem 0;
-  margin: 2rem 1rem 2rem 1rem;
-  border-radius: 15px;
 }
 
 #login-btn-link,
@@ -48,9 +50,10 @@ li {
   font-weight: 700;
   color: white;
 }
+
 #login-btn-link {
-  padding: 16px 138px;
+  padding: 10px 120px;
 }
 #register-btn-link {
-  padding: 16px 128px;
+  padding: 10px 108px;
 }
