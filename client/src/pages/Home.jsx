@@ -1,5 +1,17 @@
+/* Styles */
+import "../styles/Home.css";
+
+/* Components */
+import Footer from "../components/Footer";
+import LoginRegisterBtn from "../components/Home/LoginRegisterBtn";
+
 function Home() {
-  return <h1>Welcome to Home Page</h1>;
+  return (
+    <>
+      <LoginRegisterBtn />
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

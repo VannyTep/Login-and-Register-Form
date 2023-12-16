@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/RegisterForm.css";
 import RegisterValidation from "../js/registerValidation";
+import { Link } from "react-router-dom";
 
 function RegisterForm() {
   const [values, setValues] = useState({
@@ -49,9 +50,7 @@ function RegisterForm() {
             placeholder="Email"
             onChange={handleInput}
           />
-          <span id="errors-email">
-            {errors.username ? errors.username : ""}
-          </span>
+          <span id="errors-email">{errors.email ? errors.email : ""}</span>
         </div>
 
         <div className="password-input-container">
@@ -81,7 +80,10 @@ function RegisterForm() {
         </div>
 
         <p id="having-acc-txt">
-          Already have an account? <a href="">Login Here</a>
+          Already have an account?{" "}
+          <Link id="login-link-btn" to="/login">
+            Login Here
+          </Link>
         </p>
 
         <input type="submit" value="Login" id="submit-btn" />
